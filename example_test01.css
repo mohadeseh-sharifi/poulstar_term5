@@ -1,0 +1,17 @@
+#app{
+    width: 100px;
+    height: 200px;
+    background-color: #61cdff;
+
+}
+.my_style{
+    width: 100px;
+    height: 200px;
+    background-color: #ff6dd0;
+
+}
+p{
+    font-family: "B Arshia";
+    box-shadow: 4px 10px 10px black;
+}
+

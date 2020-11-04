@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+</head>
+<body>
+    <form>
+        <label>name : </label>
+        <input type="text"  placeholder="plese enter your first name" size="50"><br>
+        <label>family : </label>
+        <input type="text"  placeholder="plese enter your last name"  size="50"><br>
+        <label>age :</label>
+        <input  type="number" min="1"><br>
+        <label>Adress : </label>
+        <input type="text" placeholder="plese enter your home adress" size="50" ><br>
+        <label>City : </label>
+        <input list="city"><br>
+        <datalist id="city">
+            <option value="Rasht">
+            <option value="Tehran">
+            <option value="Isfehan">
+            <option value="Shiraz">
+            <option value="Tabriz">
+            <option value="Mashhad">
+            <option value="karaj">
+            <option value="ghom">
+            <option value="Sari">
+            <option value="Astara">
+        </datalist>
+        <hr><label>Gender : </label><br>
+        <label>Male</label>
+        <input type="radio" name="g"><br>
+        <label>Female</label>
+        <input type="radio" name="g"><br>
+        <label>Other</label>
+        <input type="radio" name="g"><br>
+        <hr><label>diseas :</label>
+        <input type="checkbox">
+        <label>migraine</label>
+        <input type="checkbox">
+        <label>eczema</label>
+        <input type="checkbox">
+        <label>heart problem</label>
+        <br>
+        <input type="submit" value="send">
+        <input type="reset" value="clean">
+        <input type="datetime-local">
+    </form>
+</body>
+</html>

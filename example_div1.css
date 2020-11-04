@@ -1,0 +1,42 @@
+#bgray{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 1350px;
+    height: 60px;
+    background-color: darkblue;
+}
+.sgray {
+    width: 200px;
+    height: 60px;
+    background-color: mediumblue;
+}
+#main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: normal;
+    width: 1350px;
+    height: 570px;
+    background-color: burlywood;
+
+}
+#news{
+    width: 1050px;
+    height: 570px;
+    background-color: lightskyblue;
+
+}
+#sidebar{
+    width: 300px;
+    height: 570px;
+    background-color: blue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.sblue{
+    width: 250px;
+    height: 160px;
+    background-color: dodgerblue;
+
+}
