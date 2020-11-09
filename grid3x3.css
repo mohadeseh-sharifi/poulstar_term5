@@ -5,11 +5,11 @@
 
 }
 .cell {
-  flex: 0 0 10%;
+  flex: 0 0 32%;
   height: 50px;
   margin-bottom: 5px;
-  background-color: gray;
+  background-color: #999;
 }
 .cell:nth-child(3n) {
-  background-color: red;
+  background-color: #F00;
 }

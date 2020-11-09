@@ -1,0 +1,25 @@
+.my{
+    background-color: mediumblue;
+    height:100px;
+    width:100px;
+    margin-left: 50%;
+    margin-top: 10px;
+    box-shadow: 10px 10px 10px black;
+}
+.my:hover{
+    box-shadow: 4px 4px 4px black;
+}
+#my_do{
+    background-color: lightskyblue;
+    height:200px;
+    width:200px;
+    margin-left: 50%;
+    margin-top: 10px;
+    box-shadow: 10px 10px 10px black;
+}
+#my_do:hover{
+    box-shadow: 3px 3px 3px black;
+}
+ul,ol{
+    list-style-type: initial;
+}
