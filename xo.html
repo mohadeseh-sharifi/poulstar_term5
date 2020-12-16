@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="../bootstrap-4.5.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../bootstrap-4.5.3-dist/js/bootstrap.min.js" type="text/javascript">
+
+    </script>
+</head>
+<body>
+<p id="demo">fssf</p>
+<p id="dem">sdf</p>
+<p id="de">sdf</p>
+<p id="d">sdcfds</p>
+<!--button ha -->
+    <div class="row justify-content-center" style="margin-top: 5vw;">
+        <div>
+            <div style="width: 150px;height: 150px;" class="mt-1" >
+                <button class="btn btn-outline-dark " style="height: 100%;width: 100%" onclick="zarbe(1)" name="1"></button>
+            </div>
+            <div style="width: 150px;height: 150px;" class="mt-1">
+                <button class="btn btn-outline-dark " style="height: 100%;width: 100%" onclick="zarbe(2)" name="2" ></button>
+            </div>
+            <div style="width: 150px;height: 150px;" class="mt-1">
+                <button class="btn btn-outline-dark " style="height: 100%;width: 100%" onclick="zarbe(3)" name="3"></button>
+            </div>
+        </div>
+        <div class="ml-1">
+            <div style="width: 150px;height: 150px;" class="mt-1" >
+                <button class="btn btn-outline-dark " style="height: 100%;width: 100%" onclick="zarbe(4)" name="4"></button>
+            </div>
+            <div style="width: 150px;height: 150px;" class="mt-1">
+                <button class="btn btn-outline-dark " style="height: 100%;width: 100%" onclick="zarbe(5)" name="5" ></button>
+            </div>
+            <div style="width: 150px;height: 150px;" class="mt-1">
+                <button class="btn btn-outline-dark " style="height: 100%;width: 100%" onclick="zarbe(6)" name="6"></button>
+            </div>
+        </div>
+        <div class="ml-1">
+            <div style="width: 150px;height: 150px;" class="mt-1" >
+                <button class="btn btn-outline-dark " style="height: 100%;width: 100%" onclick="zarbe(7)" name="7"></button>
+            </div>
+            <div style="width: 150px;height: 150px;" class="mt-1">
+                <button class="btn btn-outline-dark " style="height: 100%;width: 100%" onclick="zarbe(8)" name="8" ></button>
+            </div>
+            <div style="width: 150px;height: 150px;" class="mt-1">
+                <button class="btn btn-outline-dark " style="height: 100%;width: 100%;" onclick='zarbe(9)' name="9"></button>
+            </div>
+        </div>
+    </div>
+    <script>
+        var barande=[[1,2,3],[4,5,6],[7,8,9],[1,4,7],[2,5,8],[3,6,9],[1,5,9],[7,5,3]];
+        var listadd =[1,2,3,4,5,6,7,8,9];
+        var playerx=[];
+        var playero=[];
+        var lit=[];
+        function zarbe(a) {
+            document.getElementsByName(a)[0].innerHTML="x";
+            playerx.push(a);
+
+            var index = listadd.indexOf(a);
+            if (index > -1) {
+                listadd.splice(index, 1);
+            }
+
+            var tolx=playerx.length;   
+            if (tolx>2){
+                for (i=0;i<8;i++) {
+                    for (x=0;x<3;x++){
+                        var andaze=lit.length;
+                        for (m=1;m<4;m++){                  
+                            if (andaze>m){
+                                for (p=0;p<andaze;p++){
+                                    lit.pop();
+                                }
+                            }
+            
+                            for (y=0;y<tolx;y++){
+                                if (barande[i][x]==playerx[y]){
+                                    lit.push(barande[i][x]);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            document.getElementById("d").innerHTML=lit;
+
+            tol=listadd.length;
+            shuf= Math.floor(Math.random() * tol);
+            addo=listadd[shuf];
+            document.getElementsByName(addo)[0].innerHTML="o";
+
+            var inde = listadd.indexOf(addo);
+            if (inde > -1) {
+                listadd.splice(inde, 1);
+            }
+            playero.push(addo);
+            document.getElementById("demo").innerHTML=listadd;
+            document.getElementById("dem").innerHTML=playerx;
+            document.getElementById("de").innerHTML=playero;
+
+
+        }
+    </script>
+</body>
+</html>

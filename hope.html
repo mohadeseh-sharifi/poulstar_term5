@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="../bootstrap-4.5.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../bootstrap-4.5.3-dist/js/bootstrap.min.js" type="text/javascript"></script>
+</head>
+<body>
+    <div style="margin-top: 10vw;">
+        <div style="margin-left: 45%;">
+            <p id="demo" class="display-1">0</p><br>
+        </div>
+    </div>
+
+    <script>
+        var i = 0 ;
+        setInterval(myfunction, 1000); 
+
+        function myfunction() { 
+            i++;
+            if (i%7==0){
+                document.getElementById("demo").innerHTML="hope";
+            }
+            else {
+                document.getElementById("demo").innerHTML = i;
+            }
+        }
+    </script>
+</body>
+</html>

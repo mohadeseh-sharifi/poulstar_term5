@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .im{
+        width: 30%;
+        height: 100%;
+    }
+    #d{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;        
+    }
+    .sec{
+        width: 30vw;
+        height: 15vw;
+        background-color:rgb(165, 161, 161);
+    }
+    @media screen and (max-width:768px){
+        .im{
+            display: none;
+        }
+    }    
+    @media screen and (max-width:576px){
+        #d{
+            display: block;
+        }
+        .sec{
+            width: 50vw;
+            height: 30vw;
+            margin-left: 20vw;
+            margin-top: 10vw;
+        }
+    }    
+</style>
+<body>
+<div id="d">
+    <div class="sec" style="margin-top: 8vw; box-shadow: 3px 3px 3px black;">
+        <div class="im"><img src="./download.jpg" width="100%" height="100%"></div>
+    </div>
+    <div class="sec" style="margin-top: 8vw; box-shadow: 3px 3px 3px black">
+        <div class="im"><img src="./download1.jpg" width="100%" height="100%"></div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="vue.min.js"></script>
+</head>
+<div id="myapp">
+    {{ message }}
+    <button v-on:click="counter++"> {{ counter }}</button>
+</div>
+
+<body>
+    <script type="text/javascript">
+        var app = new Vue({
+            el:"#myapp",
+            data:{
+                message:"hello world",
+                counter:0,
+            },
+        })
+
+    </script>
+</body>
+</html>
